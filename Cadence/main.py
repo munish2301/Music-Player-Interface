@@ -45,10 +45,11 @@ def browse_file():
 
 
 def add_to_playlist(filename):
-    filename = os.path.basename(filename)
-    index = 0
-    playlistbox.insert(index, filename)
-    playlist.insert(index, filename_path)
+    if filename: 
+        filename = os.path.basename(filename)
+        index = 0
+        playlistbox.insert(index, filename)
+        playlist.insert(index, filename_path)
 
 
 
